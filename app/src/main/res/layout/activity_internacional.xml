@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondos"
+    tools:context=".Internacional">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/Titulos"
+        android:text="SISTEMA INTERNACIONAL"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="381dp"
+        android:layout_height="643dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="lONGITUD"
+                android:textAlignment="center"
+                android:textSize="@dimen/SubTitulos" />
+
+            <EditText
+                android:id="@+id/tx_valor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el valor a convertir"/>
+
+            <Spinner
+                android:id="@+id/Spi_longdef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <Spinner
+                android:id="@+id/Spi_longconver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"/>
+
+
+            <Button
+                android:id="@+id/convert_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convertir "
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/Result_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="MASA"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/SubTitulos"/>
+
+                <EditText
+                    android:id="@+id/tx_valor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese al valor a convertir"/>
+
+                <Spinner
+                    android:id="@+id/Spi_masadef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/Spi_masaconver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/convert_masa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convertir"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/Result_masa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="resultado"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="PRESION"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/SubTitulos"/>
+
+                <EditText
+                    android:id="@+id/tx_valor3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese el valor a convertir"/>
+
+                <Spinner
+                    android:id="@+id/Spi_predef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/Spi_preconver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"/>
+                <Button
+                    android:id="@+id/convert_presion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convertir"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/Result_presion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resultado"/>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
